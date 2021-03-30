@@ -6,7 +6,7 @@ In this repository,  we implement the SSFG (stochastic ReLU) regularization meth
 ```
 @article{zhang2021ssfg,
   title={SSFG: Stochastically Scaling Features and Gradients for Regularizing Graph Convolution Networks},
-  author={Zhang, Haimin and Xu, Min},
+  author={Haimin Zhang, Min Xu, Guoqiang Zhang, and Kenta Niwa},
   journal={arXiv preprint arXiv:2102.10338},
   year={2021}
 }
