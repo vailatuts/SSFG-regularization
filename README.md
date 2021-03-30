@@ -13,3 +13,5 @@ In this repository,  we implement the SSFG (stochastic ReLU) regularization meth
 ```
 
 ### Preparation
+
+Install PyTorch and the benchmark datasets following the official [Benchmarking Graph Neural Networks](https://github.com/graphdeeplearning/benchmarking-gnns).
