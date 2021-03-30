@@ -15,3 +15,11 @@ In this repository,  we implement the SSFG (stochastic ReLU) regularization meth
 ### Preparation
 
 Install PyTorch and the benchmark datasets following the official [Benchmarking Graph Neural Networks](https://github.com/graphdeeplearning/benchmarking-gnns).
+
+Run the following command to reproduce our results on CIFAR10 using GatedGCN for superpixel graph classification:
+
+```
+python main_superpixels_graph_classification.py --dataset CIFAR10 --seed 95 --gpu_id 0 --config configs/superpixels_graph_classification_GatedGCN_CIFAR10_100k.json
+```
+
+
