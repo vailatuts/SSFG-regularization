@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from .myreg import myshake
+from .myreg import ssfg
 import pdb
 
 """
@@ -78,9 +78,8 @@ class GatedGCNLayer(nn.Module):
         h = F.dropout(h, self.dropout, training=self.training)
         e = F.dropout(e, self.dropout, training=self.training)
 
-        ##pdb.set_trace()
-        #h = myshake.apply(h, self.training)
-        #e = myshake.apply(e, self.training)
+        h = ssfg.apply(h, self.training)
+        e = ssfg.apply(e, self.training)
         
         return h, e
     

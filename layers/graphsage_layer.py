@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 import pdb
-from .myreg import myshake
+from .myreg import ssfg
 import dgl.function as fn
 from dgl.nn.pytorch import SAGEConv
 
@@ -49,7 +49,7 @@ class GraphSageLayer(nn.Module):
             self.batchnorm_h = nn.BatchNorm1d(out_feats)
 
     def forward(self, g, h):
-        h = myshake.apply(h, self.training)
+        h = ssfg.apply(h, self.training)
         h_in = h              # for residual connection
         
         if self.dgl_builtin == False:

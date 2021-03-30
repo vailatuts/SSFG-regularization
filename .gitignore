@@ -1,0 +1,3 @@
+*.pyc
+data/superpixels/CIFAR10.pkl
+out/*

@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from .myreg import myshake
+from .myreg import ssfg
 import pdb
 
 import dgl.function as fn
@@ -78,7 +78,7 @@ class GCNLayer(nn.Module):
             h = h_in + h # residual connection
             
         h = self.dropout(h)
-        h = myshake.apply(h, self.training)
+        #h = myshake.apply(h, self.training)
         return h
     
     def __repr__(self):

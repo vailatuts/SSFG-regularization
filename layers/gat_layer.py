@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 import pdb
-from .myreg import myshake
+from .myreg import ssfg
 from dgl.nn.pytorch import GATConv
 
 """
@@ -62,8 +62,8 @@ class GATLayer(nn.Module):
         #pdb.set_trace()
         if self.residual:
             #pdb.set_trace()
-            h = myshake.apply(h, self.training)
-            h_in = myshake.apply(h_in, self.training)
+            h = ssfg.apply(h, self.training)
+            h_in = ssfg.apply(h_in, self.training)
             h = h_in + h # residual connection
 
         return h
