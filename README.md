@@ -28,4 +28,6 @@ For [graph attention networks (GATs)](https://arxiv.org/abs/1710.10903), the SSF
 lam = bt.sample(grad_output.shape[:2]) + .5  # change grad_output.shape[:1] to grad_output.shape[:2]
 ```
 
+### License
 
+This project is currently under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for details.
