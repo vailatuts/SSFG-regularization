@@ -22,7 +22,7 @@ Run the following command to reproduce our results on CIFAR10 using GatedGCN for
 python main_superpixels_graph_classification.py --dataset CIFAR10 --seed 95 --gpu_id 0 --config configs/superpixels_graph_classification_GatedGCN_CIFAR10_100k.json
 ```
 
-For [graph attention networks (GATs)](https://arxiv.org/abs/1710.10903), the SSFG regularization is applied to the output of each of the multi-attention heads. This can be done by making the following change in the [layers/myreg.py](layers/myreg.py):
+For [graph attention networks (GATs)](https://arxiv.org/abs/1710.10903), the SSFG regularization is applied to the output of each of the multi-attention heads. This can be done by making the following change in  [layers/myreg.py](layers/myreg.py):
 
 ```
 lam = bt.sample(grad_output.shape[:2]) + .5  # change grad_output.shape[:1] to grad_output.shape[:2]
