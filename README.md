@@ -1,14 +1,14 @@
 # SSFG: Stochastically Scaling Features and Gradients for Regularizing Graph Convolutional Networks
 <br>
 
-In this repository,  we implement the SSFG (stochastic ReLU) regularization method for regularizing graph convoultional networks. Our paper "SSFG: Stochastically Scaling Features and Gradients for Regularizing Graph Convolutional Networks" is available on Arxiv at [https://arxiv.org/abs/2102.10338](https://arxiv.org/abs/2102.10338).
+In this repository,  we implement the SSFG (stochastic ReLU) regularization method for regularizing graph convoultional networks. Our paper "SSFG: Stochastically Scaling Features and Gradients for Regularizing Graph Convolutional Networks" was accepted for publication in IEEE Transactions on Neural Networks and Learning Systems. '''is available on Arxiv at [through this link](https://arxiv.org/abs/2102.10338).
 
 ```
 @article{zhang2021ssfg,
   title={SSFG: Stochastically Scaling Features and Gradients for Regularizing Graph Convolutional Networks},
   author={Haimin Zhang, Min Xu, Guoqiang Zhang, and Kenta Niwa},
-  journal={arXiv preprint arXiv:2102.10338},
-  year={2021}
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  year={2022}
 }
 ```
 
